@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- omitindo informações do projeto -->
+
+    <!-- adicione a configuração abaixo, seguindo o mesmo id configurado no arquivo settings.xml -->
+    <repositories>
+        <repository>
+            <id>artifactory-repo</id>
+            <url>http://localhost:31256/artifactory/maven-dev-virtual/</url>
+        </repository>
+    </repositories>
+
+    <!-- omitindo dependencias -->
+
+</project>
