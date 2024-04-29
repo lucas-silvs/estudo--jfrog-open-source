@@ -1,0 +1,29 @@
+<settings>
+
+    <!-- força projetos maven a utilizarem somente o repositório definido -->
+
+  <mirrors>
+    <mirror>
+      <id>artifactory-repo</id>
+      <name>Maven Repository Manager running on artifactory localhost</name>
+      <url>http://localhost:31256/artifactory/maven-dev-virtual/</url>
+      <mirrorOf>*</mirrorOf>
+    </mirror>
+  </mirrors>
+
+    <!-- confiuração de autenticação do Artifactory com Bearer Token -->
+  <servers>
+    <server>
+      <id>artifactory-repo</id>
+      <configuration>
+        <httpHeaders>
+          <property>
+            <name>Authorization</name>
+            <value>Bearer ${TOKEN_JWT_ARTIFACTORY}</value>
+          </property>
+        </httpHeaders>
+      </configuration>
+    </server>
+  </servers>
+</settings>
+
